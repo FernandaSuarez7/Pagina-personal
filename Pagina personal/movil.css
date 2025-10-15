@@ -1,0 +1,291 @@
+@media (max-width: 992px) {
+  .topbar {
+    z-index: 10000;
+    position: fixed;
+  }
+
+  .nav {
+    margin-left: 0;
+    position: static;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #111213;
+    z-index: 9999;
+    gap: 0;
+    padding: 0;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  #navcheck:checked ~ .nav .nav-list {
+    transform: translateX(0);
+  }
+
+  .nav-list li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin: 0;
+  }
+
+  .nav-list a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--ink);
+    width: 100%;
+    border-radius: 0;
+    transition: background 0.25s ease, color 0.25s ease, padding-right 0.25s ease;
+  }
+
+  .nav-list a:hover,
+  .nav-list a:focus {
+    background: var(--gold);
+    color: var(--btn-text-dark);
+    padding-right: 32px;
+  }
+
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10001;
+    background: transparent;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+
+  .menu-btn:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .menu-btn span {
+    width: 26px;
+    height: 2px;
+    background: #eaeaea;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+  }
+
+  #navcheck:checked ~ .menu-btn span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  #navcheck:checked ~ .menu-btn span:nth-child(2) {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  #navcheck:checked ~ .menu-btn span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  #navcheck:checked ~ .menu-btn {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  .hero {
+    min-height: calc(100vh - var(--header-h));
+  }
+
+  .hero-copy {
+    padding: 32px 16px;
+  }
+
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .perfil-wrap {
+    flex: 0 0 auto;
+  }
+
+  .about-text-only {
+    max-width: 100%;
+  }
+
+  .about-meta {
+    align-items: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .cards {
+    gap: 14px;
+  }
+
+  .card {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .resume-cols {
+    flex-direction: column;
+  }
+
+  .resume-col {
+    width: 100%;
+  }
+
+  .grid-portfolio {
+    gap: 12px;
+  }
+
+  .shot {
+    flex: 1 1 calc(50% - 12px);
+    min-width: 0;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .footer-inner .row-gap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  :root {
+    --header-h: 70px;
+  }
+
+  .topbar {
+    padding: 0 12px;
+  }
+
+  .brand-img img {
+    height: 42px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-copy {
+    padding: 24px 12px;
+  }
+
+  .row-gap {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 48px 0;
+  }
+
+  .wrap {
+    padding: 12px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .perfil {
+    width: 160px;
+    height: 160px;
+  }
+
+  .skill-head {
+    font-size: 13px;
+  }
+
+  .info-cards {
+    gap: 12px;
+  }
+
+  .info {
+    flex: 1 1 100%;
+    min-width: 0;
+    padding: 12px;
+  }
+
+  .contact-form {
+    padding: 16px;
+  }
+
+  .contact-form .row-gap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  .shot {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
+  .footer-inner {
+    padding: 16px 12px;
+    gap: 14px;
+  }
+
+  .footer-inner p {
+    font-size: 14px;
+  }
+
+  .social-link {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .icon-svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .perfil {
+    width: 140px;
+    height: 140px;
+  }
+}

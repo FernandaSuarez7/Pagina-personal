@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portafolio • Ingeniería</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="movil.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#inicio" class="brand brand-img" aria-label="Inicio">
+      <img src="imagenes/logo.jpg" alt="Logo personal">
+    </a>
+    <input type="checkbox" id="navcheck" class="navcheck">
+    <label for="navcheck" class="menu-btn" aria-label="Abrir menú" aria-controls="menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="nav" aria-label="Navegación principal">
+      <ul class="nav-list" id="menu">
+        <li><a href="#inicio"><span>Inicio</span></a></li>
+        <li><a href="#about"><span>Acerca de mí</span></a></li>
+        <li><a href="#skills"><span>Habilidades</span></a></li>
+        <li><a href="#services"><span>Servicios</span></a></li>
+        <li><a href="#resume"><span>Resumen</span></a></li>
+        <li><a href="#portfolio"><span>Proyectos</span></a></li>
+        <li><a href="#contacto"><span>Contacto</span></a></li>
+      </ul>
+    </nav>
+    <div class="nav-dim" aria-hidden="true"></div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <span class="kicker">Hola, soy</span>
+        <h1 class="hero-title">FERNANDA SUAREZ</h1>
+        <p class="hero-sub">Ingeniera en Sistemas</p>
+        <div class="row-gap">
+          <a class="btn btn-acento btn-download" href="cv.pdf" download>
+            <svg class="btn-ico" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 20h14v-2H5v2zm7-18v10.17l3.59-3.58L17 10l-5 5-5-5 1.41-1.41L11 12.17V2h1z"/>
+            </svg>
+            <span>Descargar CV</span>
+          </a>
+          <a class="btn btn-outline" href="#contacto">Contactar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Acerca de mí</h2>
+      <div class="about-grid">
+        <figure class="perfil-wrap">
+          <img class="perfil" src="imagenes/hero.png" alt="Foto de perfil">
+        </figure>
+        <div class="about-text-only">
+          <p>
+            Ingeniera en Sistemas con enfoque en Desarrollo Web y Aplicaciones Móviles. 
+            Cursé mi carrera en el prestigioso Instituto Tecnológico de Mérida (ITM),
+            donde adquirí las habilidades para transformar ideas en productos digitales robustos y amigables.
+          </p>
+          <ul class="about-meta">
+            <li>
+              <svg class="meta-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zM4 20c0-4 4-6 8-6s8 2 8 6v2H4v-2z"/></svg>
+              <b>Nombre:</b> Fernanda Suárez
+            </li>
+            <li>
+              <svg class="meta-ico" viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.2 8 12 8 12s8-6.8 8-12c0-4.4-3.6-8-8-8zm0 10.5A2.5 2.5 0 1 1 12 7a2.5 2.5 0 0 1 0 5.5z"/></svg>
+              <b>Ubicación:</b> Mérida, Yucatán
+            </li>
+            <li>
+              <svg class="meta-ico" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v.3l10 6.2L22 6.3V6a2 2 0 0 0-2-2zm0 5.6-8 5-8-5V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9.6z"/></svg>
+              <b>Correo:</b> fersuarez0705@gmail.com
+            </li>
+            <li>
+              <svg class="meta-ico" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.8 21 3 13.2 3 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+              <b>Teléfono:</b> +52 9971325283
+            </li>
+          </ul>
+          <div class="social">
+            <a class="social-link" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.675 0h-21.35C.592 0 0 .593 0 1.326v21.348C0 23.407.592 24 1.325 24H12.82v-9.294H9.692V11.08h3.128V8.414c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.795.142v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.313h3.59l-.467 3.626h-3.123V24h6.116C23.406 24 24 23.407 24 22.674V1.326C24 .593 23.406 0 22.675 0z"/></svg>
+              <span>Facebook</span>
+            </a>
+            <a class="social-link" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.35 3.608 1.325.975.975 1.262 2.242 1.324 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.35 2.633-1.324 3.608-.975.975-2.242 1.262-3.608 1.324-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.35-3.608-1.324-.975-.975-1.262-2.242-1.324-3.608C2.175 15.796 2.163 15.416 2.163 12s.012-3.584.07-4.849c.062-1.366.35-2.633 1.324-3.608.975-.975 2.242-1.262 3.608-1.324C8.416 2.175 8.796 2.163 12 2.163zm0 3.675a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324z"/></svg>
+              <span>Instagram</span>
+            </a>
+            <a class="social-link" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.954 4.569c-.885.392-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.723 0-4.932 2.209-4.932 4.932 0 .386.045 .762.127 1.124-4.094-.205-7.725-2.165-10.158-5.144-.424.722-.666 1.561-.666 2.475 0 1.708.869 3.213 2.188 4.096-.807-.026-1.566-.247-2.229-.616v .062c0 2.385 1.693 4.374 3.946 4.827-.413 .111-.849 .171-1.296 .171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.808 2.105-6.115 2.105-.398 0-.79-.023-1.17-.067 2.179 1.397 4.768 2.212 7.557 2.212 9.054 0 14.001-7.496 14.001-13.986 0-.21 0-.423-.015-.634.962-.695 1.8-1.562 2.46-2.549z"/></svg>
+              <span>Twitter</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Habilidades</h2>
+      <div class="skills">
+        <div class="skill"><div class="skill-head"><span>PHP</span><span>90%</span></div><div class="bar"><span style="width:90%"></span></div></div>
+        <div class="skill"><div class="skill-head"><span>CSS</span><span>85%</span></div><div class="bar"><span style="width:85%"></span></div></div>
+        <div class="skill"><div class="skill-head"><span>HTML</span><span>85%</span></div><div class="bar"><span style="width:85%"></span></div></div>
+        <div class="skill"><div class="skill-head"><span>JavaScript</span><span>60%</span></div><div class="bar"><span style="width:60%"></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Servicios</h2>
+      <div class="cards">
+        <article class="card"><h3>Desarrollo de Backend</h3><p>Construcción de la lógica del lado del servidor, gestión de datos y creación de las APIs necesarias para alimentar la web y las apps.</p></article>
+        <article class="card"><h3>Desarrollo de Frontend</h3><p> Creación y programación de la interfaz visual usando lenguajes como HTML, CSS y JavaScript.</p></article>
+        <article class="card"><h3>Migración de Sistemas y Actualización Tecnológica</h3><p>Traslado de aplicaciones o sitios web antiguos a nuevas plataformas o frameworks más modernos y seguros.</p></article>
+        <article class="card"><h3>Diseño y Desarrollo de Plataformas Web </h3><p>Construcción integral de sitios web dinámicos, sistemas de gestión de contenido (CMS), e-commerce o sistemas empresariales a medida.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Resumen</h2>
+      <div class="row-wrap resume-cols">
+        <div class="resume-col">
+          <h3 class="resume-head">Formación Académica</h3>
+          <article class="resume-card"><h4>Ingeniería en Sistemas Computacionales</h4><p class="muted">INSTITUTO TECNOLOGICO DE MERIDA • 2021 – 2025</p><p>Desarrollo web, arquitectura de software y ciberseguridad.</p></article>
+          <article class="resume-card"><h4>Diplomado Frontend</h4><p class="muted">INSTITUCIÓN • 2024</p><p>HTML, CSS, JavaScript y consumo de APIs.</p></article>
+        </div>
+        <div class="resume-col">
+          <h3 class="resume-head">Experiencia Laboral</h3>
+          <article class="resume-card"><h4>Frontend Jr. – Empresa XYZ</h4><p class="muted">2023 – 2024</p><ul class="bullets"><li>Maquetación con Flexbox.</li><li>Responsive con Media Queries.</li><li>Integración de APIs (fetch).</li></ul></article>
+          <article class="resume-card"><h4>Prácticas – Área TI</h4><p class="muted">2022 – 2023</p><ul class="bullets"><li>Soporte a landing pages y SEO básico.</li><li>Git/GitHub y despliegues.</li><li>Documentación técnica.</li></ul></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Proyectos</h2>
+      <div class="grid-portfolio">
+        <a href="#" class="shot"><img src="imagenes/proj1.jpg" alt="Proyecto 1"></a>
+        <a href="#" class="shot"><img src="imagenes/proj2.jpg" alt="Proyecto 2"></a>
+        <a href="#" class="shot"><img src="imagenes/proj3.jpg" alt="Proyecto 3"></a>
+        <a href="#" class="shot"><img src="imagenes/proj4.jpg" alt="Proyecto 4"></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <div class="wrap">
+      <h2 class="section-title">Contacto</h2>
+      <div class="info-cards">
+        <article class="info">
+          <div class="info-head">
+            <svg class="info-ico" viewBox="0 0 24 24"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.2 8 12 8 12s8-6.8 8-12c0-4.4-3.6-8-8-8z"/></svg>
+            <b>Ubicación</b>
+          </div>
+          <p class="muted">Mérida, Yucatán</p>
+        </article>
+        <article class="info">
+          <div class="info-head">
+            <svg class="info-ico" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v.3l10 6.2L22 6.3V6a2 2 0 0 0-2-2zM20 9.6l-8 5-8-5V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9.6z"/></svg>
+            <b>Correo</b>
+          </div>
+          <p class="muted">fersuarez0705@gmail.com</p>
+        </article>
+        <article class="info">
+          <div class="info-head">
+            <svg class="info-ico" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.8 21 3 13.2 3 3a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1L6.6 10.8z"/></svg>
+            <b>Teléfono</b>
+          </div>
+          <p class="muted">+52 9971325283</p>
+        </article>
+      </div>
+      <form class="contact-form">
+        <div class="row-gap">
+          <label class="field">
+            <span class="field-label">
+              <svg class="field-ico" viewBox="0 0 24 24"><path d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5z"/></svg>
+              <span>Nombre</span>
+            </span>
+            <input type="text" placeholder="Tu nombre" required>
+          </label>
+          <label class="field">
+            <span class="field-label">
+              <svg class="field-ico" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v.3l10 6.2L22 6.3V6a2 2 0 0 0-2-2zM20 9.6l-8 5-8-5V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9.6z"/></svg>
+              <span>Correo</span>
+            </span>
+            <input type="email" placeholder="tu@correo.com" required>
+          </label>
+        </div>
+        <label class="field">
+          <span class="field-label">
+            <svg class="field-ico" viewBox="0 0 24 24"><path d="M3 5h18v2H3V5zm0 4h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9z"/></svg>
+            <span>Mensaje</span>
+          </span>
+          <textarea rows="6" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+        </label>
+        <button class="btn btn-acento" type="submit">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>© <span id="year"></span> FernandaSuarez. Todos los derechos reservados.</p>
+      <div class="row-gap">
+        <a class="social-link" href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.675 0h-21.35C.592 0 0 .593 0 1.326v21.348C0 23.407.592 24 1.325 24H12.82v-9.294H9.692V11.08h3.128V8.414c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.795.142v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.763v2.313h3.59l-.467 3.626h-3.123V24h6.116C23.406 24 24 23.407 24 22.674V1.326C24 .593 23.406 0 22.675 0z"/></svg>
+          <span>Facebook</span>
+        </a>
+        <a class="social-link" href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.849.07 1.366.062 2.633.35 3.608 1.325.975.975 1.262 2.242 1.324 3.608.058 1.265.069 1.645.069 4.849s-.012 3.584-.07 4.849c-.062 1.366-.35 2.633-1.324 3.608-.975.975-2.242 1.262-3.608 1.324-1.265.058-1.645.069-4.849.069s-3.584-.012-4.849-.07c-1.366-.062-2.633-.35-3.608-1.324-.975-.975-1.262-2.242-1.324-3.608C2.175 15.796 2.163 15.416 2.163 12s.012-3.584.07-4.849c.062-1.366.35-2.633 1.324-3.608.975-.975 2.242-1.262 3.608-1.324C8.416 2.175 8.796 2.163 12 2.163zm0 3.675a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324z"/></svg>
+          <span>Instagram</span>
+        </a>
+        <a class="social-link" href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M23.954 4.569c-.885.392-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-2.723 0-4.932 2.209-4.932 4.932 0 .386.045 .762.127 1.124-4.094-.205-7.725-2.165-10.158-5.144-.424.722-.666 1.561-.666 2.475 0 1.708.869 3.213 2.188 4.096-.807-.026-1.566-.247-2.229-.616v .062c0 2.385 1.693 4.374 3.946 4.827-.413 .111-.849 .171-1.296 .171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.808 2.105-6.115 2.105-.398 0-.79-.023-1.17-.067 2.179 1.397 4.768 2.212 7.557 2.212 9.054 0 14.001-7.496 14.001-13.986 0-.21 0-.423-.015-.634.962-.695 1.8-1.562 2.46-2.549z"/></svg>
+          <span>Twitter</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const navcheck = document.getElementById('navcheck');
+    const menuBtn  = document.querySelector('.menu-btn');
+    const overlay  = document.querySelector('.nav-dim');
+    function syncMenuState(){
+      const open = !!navcheck?.checked;
+      document.body.classList.toggle('nav-open', open);
+      menuBtn?.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    navcheck?.addEventListener('change', syncMenuState);
+    document.querySelectorAll('.nav-list a').forEach(a=>{
+      a.addEventListener('click', ()=>{ if(navcheck){ navcheck.checked=false; syncMenuState(); }});
+    });
+    overlay?.addEventListener('click', ()=>{
+      if(navcheck){ navcheck.checked=false; syncMenuState(); }
+    });
+    document.addEventListener('keydown', e=>{
+      if(e.key==='Escape' && navcheck?.checked){ navcheck.checked=false; syncMenuState(); }
+    });
+    syncMenuState();
+  </script>
+</body>
+</html>
